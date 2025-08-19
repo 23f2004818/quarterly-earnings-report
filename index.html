@@ -1,94 +1,96 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Quarterly Earnings Report</title>
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css">
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS core -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+
+    <!-- Code highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
     <div class="reveal">
-        <div class="slides">
-            <section>
-                <h2>Q1 2024 Earnings Report 📈</h2>
-                <p>Presented by: The Financial Analytics Team</p>
-                <small>For inquiries, please contact: <b>23f2004818@ds.study.iitm.ac.in</b></small>
-                <aside class="notes">
-                    Welcome everyone to the Q1 2024 earnings report. We'll be covering our financial performance and strategic outlook.
-                </aside>
-            </section>
+      <div class="slides">
 
-            <section data-markdown>
-                <textarea data-template>
-                    ### Key Financial Highlights ✨
+        <!-- Title slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p><strong>Email:</strong> 23f2004818@ds.study.iitm.ac.in</p>
+          <aside class="notes">
+            Welcome the stakeholders and introduce the report. Mention contact email.
+          </aside>
+        </section>
 
-                    - **Revenue Growth:** Our total revenue increased by 15% year-over-year.
-                    - **Profitability:** Net income saw a 10% increase, driven by operational efficiency.
-                    - **Market Share:** We have expanded our market share in key segments.
+        <!-- Markdown slide -->
+        <section data-markdown>
+          <textarea data-template>
+# Key Highlights (Markdown Slide)
 
-                    <small>This markdown slide provides a quick overview of our top-level achievements.</small>
-                </textarea>
-                <aside class="notes">
-                    This slide, written in Markdown, presents a concise summary of our key performance indicators.
-                </aside>
-            </section>
+- Revenue Growth: **12%**
+- Net Profit: **₹45 Cr**
+- New Customers: **+5,000**
+          </textarea>
+        </section>
 
-            <section>
-                <h3>Revenue Breakdown</h3>
-                <p>Our revenue streams showed varied performance this quarter.</p>
-                <ul>
-                    <li class="fragment fade-up">Retail Banking: <b class="fragment fade-in">+$5M</b></li>
-                    <li class="fragment fade-up">Corporate Lending: <b class="fragment fade-in">+$8M</b></li>
-                    <li class="fragment fade-up">Investment Services: <b class="fragment fade-in">+$2M</b></li>
-                </ul>
-                <aside class="notes">
-                    This slide uses animated fragments to reveal each revenue stream one by one, highlighting our core growth areas.
-                </aside>
-            </section>
+        <!-- Fragments for animation -->
+        <section>
+          <h2>Quarterly Growth Drivers</h2>
+          <ul>
+            <li class="fragment">Increased Digital Transactions</li>
+            <li class="fragment">New Lending Products</li>
+            <li class="fragment">Operational Efficiency</li>
+          </ul>
+          <aside class="notes">
+            Present each point one by one using fragments.
+          </aside>
+        </section>
 
-            <section>
-                <h3>Financial Ratios</h3>
-                <p>We use various metrics to evaluate our financial health.</p>
-                <pre><code class="language-javascript">
-// JavaScript example for calculating profit margin
-function calculateProfitMargin(revenue, expenses) {
-  return ((revenue - expenses) / revenue) * 100;
-}
-                </code></pre>
-                <aside class="notes">
-                    The code block demonstrates a simple profit margin calculation, which is a key metric for us.
-                </aside>
-            </section>
+        <!-- Code sample with syntax highlighting -->
+        <section>
+          <h2>Data Processing Code</h2>
+          <pre><code class="language-python">
+import pandas as pd
 
-            <section>
-                <h3>Mathematical Formulas</h3>
-                <p>Here is the formula for calculating **Return on Equity (ROE)**:</p>
-                $$
-                \text{ROE} = \frac{\text{Net Income}}{\text{Shareholder's Equity}}
-                $$
-                <aside class="notes">
-                    This equation illustrates our Return on Equity, a crucial measure of profitability.
-                </aside>
-            </section>
+# Load quarterly earnings data
+df = pd.read_csv("earnings.csv")
+print(df.describe())
+          </code></pre>
+          <aside class="notes">
+            Demonstrate backend code snippet used in reporting pipeline.
+          </aside>
+        </section>
 
-        </div>
+        <!-- Math formulas -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Return on Investment (ROI):</p>
+          <p>$$ ROI = \frac{Net\ Profit}{Investment} \times 100\% $$</p>
+          <aside class="notes">
+            Explain the formula for ROI to stakeholders.
+          </aside>
+        </section>
+
+      </div>
     </div>
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/math/math.js"></script>
+
+    <!-- RevealJS core script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
     <script>
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-        });
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+      });
     </script>
-</body>
+  </body>
 </html>
