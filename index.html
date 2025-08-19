@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Q1 2024 Earnings Report 📈</h2>
+                <p>Presented by: The Financial Analytics Team</p>
+                <small>For inquiries, please contact: <b>23f2004818@ds.study.iitm.ac.in</b></small>
+                <aside class="notes">
+                    Welcome everyone to the Q1 2024 earnings report. We'll be covering our financial performance and strategic outlook.
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ### Key Financial Highlights ✨
+
+                    - **Revenue Growth:** Our total revenue increased by 15% year-over-year.
+                    - **Profitability:** Net income saw a 10% increase, driven by operational efficiency.
+                    - **Market Share:** We have expanded our market share in key segments.
+
+                    <small>This markdown slide provides a quick overview of our top-level achievements.</small>
+                </textarea>
+                <aside class="notes">
+                    This slide, written in Markdown, presents a concise summary of our key performance indicators.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Revenue Breakdown</h3>
+                <p>Our revenue streams showed varied performance this quarter.</p>
+                <ul>
+                    <li class="fragment fade-up">Retail Banking: <b class="fragment fade-in">+$5M</b></li>
+                    <li class="fragment fade-up">Corporate Lending: <b class="fragment fade-in">+$8M</b></li>
+                    <li class="fragment fade-up">Investment Services: <b class="fragment fade-in">+$2M</b></li>
+                </ul>
+                <aside class="notes">
+                    This slide uses animated fragments to reveal each revenue stream one by one, highlighting our core growth areas.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Financial Ratios</h3>
+                <p>We use various metrics to evaluate our financial health.</p>
+                <pre><code class="language-javascript">
+// JavaScript example for calculating profit margin
+function calculateProfitMargin(revenue, expenses) {
+  return ((revenue - expenses) / revenue) * 100;
+}
+                </code></pre>
+                <aside class="notes">
+                    The code block demonstrates a simple profit margin calculation, which is a key metric for us.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Mathematical Formulas</h3>
+                <p>Here is the formula for calculating **Return on Equity (ROE)**:</p>
+                $$
+                \text{ROE} = \frac{\text{Net Income}}{\text{Shareholder's Equity}}
+                $$
+                <aside class="notes">
+                    This equation illustrates our Return on Equity, a crucial measure of profitability.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
